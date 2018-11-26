@@ -138,7 +138,7 @@
         app:layout_constraintVertical_bias="0.082" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/capColor"
         android:layout_width="73dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -155,7 +155,7 @@
         app:layout_constraintVertical_bias="0.05">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/capB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -163,7 +163,7 @@
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/capR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -173,23 +173,23 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/capQuantity"
         android:layout_width="100dp"
         android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintStart_toEndOf="@+id/capColor"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:layout_constraintVertical_bias="0.088" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOrderCap"
         android:layout_width="76dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
@@ -224,7 +224,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrderCap"
         app:layout_constraintHorizontal_bias="0.964"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

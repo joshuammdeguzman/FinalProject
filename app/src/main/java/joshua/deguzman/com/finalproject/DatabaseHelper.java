@@ -56,6 +56,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Cursor getData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_NAME;
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
     public Boolean getData1(String user, String pass){
         SQLiteDatabase db = this.getWritableDatabase();
         String selectQuery = "select * from  " + TABLE_NAME + " where " +
@@ -71,5 +78,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return false;
+    }
+
+    public Cursor getData2(String user){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "select * from  " + TABLE_NAME + " where " +
+                COL_2 + " = " + "'"+user+"'";
+        Cursor data = db.rawQuery(query, null);
+        data.moveToFirst();
+        return data;
     }
 }

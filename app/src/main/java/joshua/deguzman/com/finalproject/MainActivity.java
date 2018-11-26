@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity{
     DatabaseHelper myDb;
     private EditText username, password;
-    private String username1, password1;
+    public static String username1, password1;
     private CheckBox checkb;
     private SharedPreferences credentials;
     private static final String PREFS_NAME = "prefName";
